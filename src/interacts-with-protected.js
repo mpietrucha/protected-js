@@ -8,7 +8,7 @@ export class InteractsWithProtected {
         this.#protected = properties
 
         createProtected(this.constructor, 'protected', () => {
-            throw new Error('Cannot call `protected` outside constructor')
+            throw new Error('Cannot call `protected` outside child constructor')
         })
     }
 
